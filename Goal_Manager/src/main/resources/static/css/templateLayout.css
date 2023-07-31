@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
 #contents-layout {
     display: grid;
     grid-template-rows: 100px 1fr 100px;
@@ -9,17 +11,17 @@
     grid-row: 1/2;
 }
 
-#contents-main {
+#contetns-main {
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
-#contents-out {
+#contetns-out {
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-#contents-footer {
+#contetns-footer {
     grid-column: 1/3;
     grid-row: 3/4;
 }
@@ -31,11 +33,39 @@
 }
 
 #navi {
-    margin-left: 1700px;
+    margin-left: 1500px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Noto Serif JP', sans-serif;
+    color: black;
+}
+
+#navi a {
+    text-decoration: none;
+    color: black;
 }
 
 #menu {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    border-bottom: 2px solid;
+}
+
+#menu li {
+    position: relative;
+}
+
+#menu li a {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Noto Serif JP', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#menu li a:hover {
+    font-style: normal;
 }
